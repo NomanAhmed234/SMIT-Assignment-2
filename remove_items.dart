@@ -9,8 +9,8 @@ void main() {
     "Saturday",
     "Sunday"
   ];
-  for (var i in days) {
-    days.remove(i);
+  for (var i = 0; i < days.length;i++) {
+    days.remove(days[i]);
     print(days);
   }
 }
