@@ -28,14 +28,15 @@ void main() {
     24
   ];
   List<num> new_list = [];
+  List<num> same_list = [];
+  same_list = integer;
   for (var i in integer) {
-    for (var j in integer) {
-      if (i < j) {
-        new_list.add(i);
-      } else {
-        
-      }
-    }
+    new_list.add(i);
   }
+  new_list.sort();
+  integer = same_list;
+  print("before sort:");
+  print(integer);
+  print("After sort:");
   print(new_list);
 }
