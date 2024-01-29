@@ -11,12 +11,13 @@ void main() {
     'sun': 3000.0,
     'mon': 3000.0,
     'tue': 3234.0,
+    'fri': 1111.0,
   };
-  bool isPresent = true;
-
-  if (expanse['fri'] == "") {
-    expanse['fri'] = 5000.0;
-  } else
-    () {};
-  print(expanse["fri"]);
+  if (expanse.containsKey("fri")) {
+    expanse.update('fri', (value) => 5000.0);
+  } else {
+    Map<String,double> n = {'fri': 10000};
+    expanse.addAll(n);
+  }
+  print(expanse['fri']);
 }

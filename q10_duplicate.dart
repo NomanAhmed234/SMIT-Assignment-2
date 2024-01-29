@@ -19,6 +19,7 @@ void main() {
   ];
   List<String> new_names = [];
 
+  names.sort();
   
   print(names);
 }
