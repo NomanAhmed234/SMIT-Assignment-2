@@ -24,16 +24,7 @@ void main() {
     76,
     75
   ];
-  List<num> unique = [];
-  List<num> same = [];
-  for (var j = 0; j < numbers.length; j++) {
-    for (var i = numbers.length - 1; j > 0;j--) {
-      if (numbers[i] == numbers[j]) {
-        numbers.remove(numbers[i]);
-      } else {
-        unique.add(numbers[i]);
-      }
-    }
-  }
-  print(numbers);
+  Set<num> unique;
+  unique = numbers.toSet();
+  print(unique);
 }

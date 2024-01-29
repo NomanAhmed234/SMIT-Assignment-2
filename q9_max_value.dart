@@ -23,6 +23,5 @@ void main() {
   ];
   var i;
   numbers.sort();
-  for (i in numbers) {}
-  print(i);
+  print(numbers.last);
 }

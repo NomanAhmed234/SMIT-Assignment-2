@@ -17,9 +17,8 @@ void main() {
     "Noman",
     "Zahoor"
   ];
-  List<String> new_names = [];
 
-  names.sort();
-  
-  print(names);
+  Set <String>new_names;
+  new_names = names.toSet();
+  print(new_names);
 }

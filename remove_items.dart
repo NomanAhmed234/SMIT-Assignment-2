@@ -9,7 +9,7 @@ void main() {
     "Saturday",
     "Sunday"
   ];
-  for (var i = 0; i < days.length;i++) {
+  for (var i = days.length-1; i >-1;i--) {
     days.remove(days[i]);
     print(days);
   }

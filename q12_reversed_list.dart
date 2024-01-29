@@ -11,7 +11,7 @@ void main() {
     "Watermelon"
   ];
   List<String> new_fruits = [];
-  for (var i = fruits.length - 1; i > 0; i--) {
+  for (var i = fruits.length - 1; i >= 0; i--) {
     new_fruits.add(fruits[i]);
   }
   print("The original Arrangement of Elements:");
